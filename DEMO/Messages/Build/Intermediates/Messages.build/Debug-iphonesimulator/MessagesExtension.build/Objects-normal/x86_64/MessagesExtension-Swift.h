@@ -110,15 +110,43 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_UNAVAILABLE __attribute__((unavailable))
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import UIKit;
+@import CoreGraphics;
 @import Messages;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class MSConversation;
-@class MSMessage;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC17MessagesExtension19ChildViewController")
+@interface ChildViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionViewLayout;
+
+SWIFT_CLASS("_TtC17MessagesExtension13GameBoardView")
+@interface GameBoardView : UICollectionView
+- (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17MessagesExtension23GameStartViewController")
+@interface GameStartViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class MSConversation;
+@class MSMessage;
 
 SWIFT_CLASS("_TtC17MessagesExtension22MessagesViewController")
 @interface MessagesViewController : MSMessagesAppViewController
@@ -131,6 +159,24 @@ SWIFT_CLASS("_TtC17MessagesExtension22MessagesViewController")
 - (void)didCancelSendingMessage:(MSMessage * _Nonnull)message conversation:(MSConversation * _Nonnull)conversation;
 - (void)willTransitionToPresentationStyle:(MSMessagesAppPresentationStyle)presentationStyle;
 - (void)didTransitionToPresentationStyle:(MSMessagesAppPresentationStyle)presentationStyle;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17MessagesExtension25ShipDestroyViewController")
+@interface ShipDestroyViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC17MessagesExtension26ShipLocationViewController")
+@interface ShipLocationViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

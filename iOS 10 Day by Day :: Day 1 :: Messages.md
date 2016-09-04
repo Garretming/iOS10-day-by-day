@@ -90,6 +90,7 @@ MessagesViewController 是我们扩展的入口. MessagesViewController 是 MSMe
 作为 Messages extension 的root view controller,这个模板类包含了丰富的方法以供我们处理各种细颗粒度情况，例如当用户收到一条短信的时候扩展就会打开。这就是利用其中的方法实现的。
 
 The first thing to note is that our extension can be in two MSMessagesAppPresentationStyle`s when open:
+
 我们首先可以注意到可以使用以下两种类型打开我们的扩展。
 
 * compact
@@ -98,14 +99,12 @@ The first thing to note is that our extension can be in two MSMessagesAppPresent
 compact will be the style used when the extension is opened by the user from the applications drawer and is presented in the keyboard area. 
 The expanded style gives the extension a little more breathing room by taking up most of the screen.
 
-To keep our codebase relatively tidy, we’ll split the two presentation styles into separate view controllers, which we’ll then add as child view controllers of MessagesViewController.
-
 
 ###Child View Controllers
 
 We won’t spend too much time looking at the implementation of these controllers and instead focus on the sending of messages along with data about the game state. Please feel free to browse through the code on Github
 
-这里大概的意思就是去GitHub看源码实现，是有关于短信息发送的。
+这里大概的意思就是去GitHub看源码实现，是有关于短信息发送界面的。
 
 
 ###GameStartViewController

@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C17MessagesExtension22MessagesViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "willBecomeActive"
 - "didResignActive"
 - "didReceive"
 - "didTransition"
+- "didCancelSending"
 - "didStartSending"
 - "willTransition"
-- "didCancelSending"
-- "willBecomeActive"
-- "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "MSMessage"
-- "MessagesViewController"
+- "MSConversation"
 - "MSMessagesAppPresentationStyle"
 - "MSMessagesAppViewController"
-- "MSConversation"
+- "MessagesViewController"
+- "MSMessage"
 depends-member:
 - ["Ps9AnyObject", "didCancelSending"]
 - ["Ps9AnyObject", "didReceive"]

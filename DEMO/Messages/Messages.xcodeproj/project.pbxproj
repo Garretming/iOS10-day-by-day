@@ -13,6 +13,13 @@
 		C89C8C9C1D795ABA0066FAEC /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89C8C9B1D795ABA0066FAEC /* MessagesViewController.swift */; };
 		C89C8C9F1D795ABA0066FAEC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C89C8C9D1D795ABA0066FAEC /* MainInterface.storyboard */; };
 		C89C8CA11D795ABA0066FAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89C8CA01D795ABA0066FAEC /* Assets.xcassets */; };
+		C8EBAFD61D7C3ED7005DA33E /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFD51D7C3ED7005DA33E /* GameConstants.swift */; };
+		C8EBAFD81D7C3F03005DA33E /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFD71D7C3F03005DA33E /* GameModel.swift */; };
+		C8EBAFDA1D7C3F33005DA33E /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFD91D7C3F33005DA33E /* ChildViewController.swift */; };
+		C8EBAFDC1D7C3F52005DA33E /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFDB1D7C3F52005DA33E /* GameStartViewController.swift */; };
+		C8EBAFE21D7C3FAA005DA33E /* ShipLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFE11D7C3FAA005DA33E /* ShipLocationViewController.swift */; };
+		C8EBAFE41D7C3FC5005DA33E /* ShipDestroyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFE31D7C3FC5005DA33E /* ShipDestroyViewController.swift */; };
+		C8EBAFE71D7C3FF2005DA33E /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EBAFE61D7C3FF2005DA33E /* GameBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		C89C8C9E1D795ABA0066FAEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		C89C8CA01D795ABA0066FAEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C89C8CA21D795ABA0066FAEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8EBAFD51D7C3ED7005DA33E /* GameConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		C8EBAFD71D7C3F03005DA33E /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		C8EBAFD91D7C3F33005DA33E /* ChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		C8EBAFDB1D7C3F52005DA33E /* GameStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
+		C8EBAFE11D7C3FAA005DA33E /* ShipLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipLocationViewController.swift; sourceTree = "<group>"; };
+		C8EBAFE31D7C3FC5005DA33E /* ShipDestroyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShipDestroyViewController.swift; sourceTree = "<group>"; };
+		C8EBAFE61D7C3FF2005DA33E /* GameBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,7 @@
 		C89C8C9A1D795ABA0066FAEC /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				C8EBAFE81D7C3FF5005DA33E /* Utils */,
 				C8E336EE1D7ADD9C004BF6AA /* View */,
 				C8E336ED1D7ADD80004BF6AA /* Controllers */,
 				C8E336EC1D7ADD62004BF6AA /* Model */,
@@ -115,6 +130,8 @@
 		C8E336EC1D7ADD62004BF6AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C8EBAFD51D7C3ED7005DA33E /* GameConstants.swift */,
+				C8EBAFD71D7C3F03005DA33E /* GameModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -123,6 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				C89C8C9B1D795ABA0066FAEC /* MessagesViewController.swift */,
+				C8EBAFD91D7C3F33005DA33E /* ChildViewController.swift */,
+				C8EBAFDB1D7C3F52005DA33E /* GameStartViewController.swift */,
+				C8EBAFE11D7C3FAA005DA33E /* ShipLocationViewController.swift */,
+				C8EBAFE31D7C3FC5005DA33E /* ShipDestroyViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -130,8 +151,16 @@
 		C8E336EE1D7ADD9C004BF6AA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C8EBAFE61D7C3FF2005DA33E /* GameBoardView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C8EBAFE81D7C3FF5005DA33E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C89C8C9C1D795ABA0066FAEC /* MessagesViewController.swift in Sources */,
+				C8EBAFD61D7C3ED7005DA33E /* GameConstants.swift in Sources */,
+				C8EBAFE41D7C3FC5005DA33E /* ShipDestroyViewController.swift in Sources */,
+				C8EBAFE71D7C3FF2005DA33E /* GameBoardView.swift in Sources */,
+				C8EBAFE21D7C3FAA005DA33E /* ShipLocationViewController.swift in Sources */,
+				C8EBAFD81D7C3F03005DA33E /* GameModel.swift in Sources */,
+				C8EBAFDA1D7C3F33005DA33E /* ChildViewController.swift in Sources */,
+				C8EBAFDC1D7C3F52005DA33E /* GameStartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
