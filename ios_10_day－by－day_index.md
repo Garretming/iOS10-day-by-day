@@ -1,10 +1,10 @@
 # iOS 10 day－by－day index 索引
 
-![iOS icon](http://img3.imgtn.bdimg.com/it/u=1412936714,4205748155&fm=11&gp=0.jpg)
+![iOS icon](http://img2.imgtn.bdimg.com/it/u=3237233994,1518157416&fm=11&gp=0.jpg)
 
 
 ## [iOS 10 Day by Day :: Day 1 :: Messages](https://github.com/kengsir/iOS10-day-by-day/blob/master/iOS%2010%20Day%20by%20Day%20::%20Day%201%20::%20Messages.md)
-## [iOS 10 Day by Day :: Day 2 :: Thread Sanitizer](http://www.code4app.com)
+## [iOS 10 Day by Day :: Day 2 :: Thread Sanitizer](https://github.com/kengsir/iOS10-day-by-day/blob/master/iOS%2010%20Day%20by%20Day%20::%20Day%202%20::%20Thread%20Sanitizer.md)
 
 ## [iOS 10 Day by Day :: Day 3 :: Xcode Source Editor Extensions](http://www.code4app.com)
 
