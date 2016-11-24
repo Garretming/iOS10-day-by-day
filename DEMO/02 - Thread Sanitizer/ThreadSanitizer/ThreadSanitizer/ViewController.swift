@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func deposit(_ sender: UIButton) {
         //第一次测试
-        //self.account.deposit(amount: 100, completed: updateBalanceLabel)
+       // self.account.deposit(amount: 100, completed: updateBalanceLabel)
         
         //MARK:- 使用Swift 3 GCD库的取钱方法
         self.account.deposit(amount: 100, onSuccess: updateBalanceLabel)
