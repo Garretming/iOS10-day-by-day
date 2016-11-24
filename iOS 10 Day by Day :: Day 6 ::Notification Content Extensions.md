@@ -94,9 +94,7 @@ func didReceive(_ notification: UNNotification) {
 
 而 UNNotificationContentExtension 这个 protocol 提供了另一个处理点击事件的方法：didReceive(_:completionHandler:)。我们就用这个方法，把小喇叭的 icon 改成红线划掉的小喇叭，然后把通知从 UNNotificationCenter 中移除。
 
-文／戴仓薯（简书作者）
-原文链接：http://www.jianshu.com/p/001a5ab81808
-著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
+
 
 
 ```
